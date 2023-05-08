@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgrePhyscisDemo", "OgrePhysicsDemo.vcxproj", "{05563C3D-DB5A-4307-81FA-DA6F925FAB72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		MinSizeRel|x64 = MinSizeRel|x64
+		Release|x64 = Release|x64
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05563C3D-DB5A-4307-81FA-DA6F925FAB72}.Debug|x64.ActiveCfg = Debug|x64
+		{05563C3D-DB5A-4307-81FA-DA6F925FAB72}.Debug|x64.Build.0 = Debug|x64
+		{05563C3D-DB5A-4307-81FA-DA6F925FAB72}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{05563C3D-DB5A-4307-81FA-DA6F925FAB72}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{05563C3D-DB5A-4307-81FA-DA6F925FAB72}.Release|x64.ActiveCfg = Release|x64
+		{05563C3D-DB5A-4307-81FA-DA6F925FAB72}.Release|x64.Build.0 = Release|x64
+		{05563C3D-DB5A-4307-81FA-DA6F925FAB72}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{05563C3D-DB5A-4307-81FA-DA6F925FAB72}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0171F4E-352F-4B60-9B9F-64A1701B65FE}
+	EndGlobalSection
+EndGlobal

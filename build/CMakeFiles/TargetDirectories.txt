@@ -1,0 +1,3 @@
+/home/kiko/Documents/OgrePhysicsDemo/build/CMakeFiles/OgrePhysicsDemo.dir
+/home/kiko/Documents/OgrePhysicsDemo/build/CMakeFiles/edit_cache.dir
+/home/kiko/Documents/OgrePhysicsDemo/build/CMakeFiles/rebuild_cache.dir

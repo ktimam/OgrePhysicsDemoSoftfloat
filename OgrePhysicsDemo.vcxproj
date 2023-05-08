@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{05563C3D-DB5A-4307-81FA-DA6F925FAB72}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>OgrePhyscisDemo</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\Ogre\ogre-next\build\bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OgrePhysicsDemo.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OgrePhysicsDemo.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OgrePhysicsDemo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OgrePhysicsDemo.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OgrePhysicsDemo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OgrePhysicsDemo.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OgrePhysicsDemo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Ogre\ogre-next\OgreMain\include;..\Ogre\ogre-next\build\include;..\Ogre\ogre-next-deps\build\ogredeps\include;..\Ogre\ogre-next;..\Ogre\ogre-next\OgreMain\include\Threading;..\Ogre\ogre-next\Components\Hlms\Pbs\include;..\Ogre\ogre-next\Components\Hlms\Unlit\include;..\Ogre\ogre-next\Components\Hlms\Common\include;..\Ogre\ogre-next\Components\Overlay\include;..\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;..\bulletSoftfloat\src;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;USE_JSON_UNIT_TESTING;CMAKE_INTDIR="Debug";__BT_DISABLE_SSE__;STREFLOP_SOFT=1</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;USE_JSON_UNIT_TESTING;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include\Threading;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Common\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Components\Overlay\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial03_DeterministicLoop\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include\Threading;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Common\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Components\Overlay\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial03_DeterministicLoop\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\bulletSoftfloat\src\LinearMath\streflop\streflopVC.a;..\bulletSoftfloat\bin\BulletDynamics_vs2010_x64_debug.lib;..\bulletSoftfloat\bin\BulletCollision_vs2010_x64_debug.lib;..\bulletSoftfloat\bin\Bullet3Common_vs2010_x64_debug.lib;..\bulletSoftfloat\bin\LinearMath_vs2010_x64_debug.lib;..\Ogre\ogre-next\build\lib\$(Configuration)\OgreOverlay_d.lib;..\Ogre\ogre-next\build\lib\$(Configuration)\OgreHlmsPbs_d.lib;..\Ogre\ogre-next\build\lib\$(Configuration)\OgreHlmsUnlit_d.lib;..\Ogre\ogre-next\build\lib\$(Configuration)\OgreMeshLodGenerator_d.lib;..\Ogre\ogre-next\build\lib\$(Configuration)\OgreSceneFormat_d.lib;..\Ogre\ogre-next\build\lib\$(Configuration)\Plugin_ParticleFX_d.lib;..\Ogre\ogre-next\build\lib\$(Configuration)\RenderSystem_Direct3D11_d.lib;..\Ogre\ogre-next\build\lib\$(Configuration)\RenderSystem_GL3Plus_d.lib;..\Ogre\ogre-next\build\lib\$(Configuration)\RenderSystem_NULL_d.lib;..\Ogre\ogre-next\build\lib\$(Configuration)\RenderSystem_Vulkan_d.lib;winmm.lib;imm32.lib;version.lib;msimg32.lib;..\Ogre\ogre-next-deps\build\ogredeps\lib\SDL2main.lib;..\Ogre\ogre-next-deps\build\ogredeps\lib\SDL2.lib;..\Ogre\ogre-next\build\lib\$(Configuration)\OgreMain_d.lib;..\Ogre\ogre-next-deps\build\ogredeps\lib\$(Configuration)\FreeImage_d.lib;..\Ogre\ogre-next-deps\build\ogredeps\lib\$(Configuration)\zziplib_d.lib;..\Ogre\ogre-next-deps\build\ogredeps\lib\$(Configuration)\zlib_d.lib;..\Ogre\ogre-next-deps\build\ogredeps\lib\$(Configuration)\freetype_d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Kiko/MyProjects/Ogre/Ogre/ogre-next/build/lib/Debug/OgrePhysicsDemo.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Kiko/MyProjects/Ogre/Ogre/ogre-next/build/bin/Debug/OgrePhysicsDemo.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutputPath)$(ProjectName)$(TargetExt)</OutputFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include\Threading;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Common\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Components\Overlay\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial03_DeterministicLoop\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>__BT_DISABLE_SSE__;%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include\Threading;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Common\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Components\Overlay\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial03_DeterministicLoop\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include\Threading;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Common\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Components\Overlay\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial03_DeterministicLoop\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\Release\OgreSamplesCommon.lib;..\..\..\..\lib\Release\OgreOverlay.lib;winmm.lib;imm32.lib;version.lib;msimg32.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\SDL2main.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\SDL2.lib;..\..\..\..\lib\Release\OgreHlmsPbs.lib;..\..\..\..\lib\Release\OgreHlmsUnlit.lib;..\..\..\..\lib\Release\OgreMain.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\FreeImage.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\zziplib.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\zlib.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Kiko/MyProjects/Ogre/Ogre/ogre-next/build/lib/Release/OgrePhysicsDemo.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Kiko/MyProjects/Ogre/Ogre/ogre-next/build/bin/Release/OgrePhysicsDemo.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(ProjectDir)$(BaseOutputPath)$(Configuration)\$(ProjectName)$(TargetExt)</OutputFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include\Threading;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Common\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Components\Overlay\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial03_DeterministicLoop\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>__BT_DISABLE_SSE__;%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include\Threading;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Common\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Components\Overlay\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial03_DeterministicLoop\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include\Threading;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Common\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Components\Overlay\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial03_DeterministicLoop\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\MinSizeRel\OgreSamplesCommon.lib;..\..\..\..\lib\MinSizeRel\OgreOverlay.lib;winmm.lib;imm32.lib;version.lib;msimg32.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\SDL2main.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\SDL2.lib;..\..\..\..\lib\MinSizeRel\OgreHlmsPbs.lib;..\..\..\..\lib\MinSizeRel\OgreHlmsUnlit.lib;..\..\..\..\lib\MinSizeRel\OgreMain.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\FreeImage.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\zziplib.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\zlib.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Kiko/MyProjects/Ogre/Ogre/ogre-next/build/lib/MinSizeRel/OgrePhysicsDemo.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Kiko/MyProjects/Ogre/Ogre/ogre-next/build/bin/MinSizeRel/OgrePhysicsDemo.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(ProjectDir)$(BaseOutputPath)$(Configuration)\$(ProjectName)$(TargetExt)</OutputFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include\Threading;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Common\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Components\Overlay\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial03_DeterministicLoop\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>__BT_DISABLE_SSE__;%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include\Threading;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Common\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Components\Overlay\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial03_DeterministicLoop\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\OgreMain\include\Threading;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Common\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Components\Overlay\include;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial03_DeterministicLoop\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\RelWithDebInfo\OgreSamplesCommon.lib;..\..\..\..\lib\RelWithDebInfo\OgreOverlay.lib;winmm.lib;imm32.lib;version.lib;msimg32.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\SDL2main.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\SDL2.lib;..\..\..\..\lib\RelWithDebInfo\OgreHlmsPbs.lib;..\..\..\..\lib\RelWithDebInfo\OgreHlmsUnlit.lib;..\..\..\..\lib\RelWithDebInfo\OgreMain.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\FreeImage.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\zziplib.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\zlib.lib;C:\Kiko\MyProjects\Ogre\Ogre\ogre-next-deps\build\ogredeps\lib\Release\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Kiko/MyProjects/Ogre/Ogre/ogre-next/build/lib/RelWithDebInfo/OgrePhysicsDemo.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Kiko/MyProjects/Ogre/Ogre/ogre-next/build/bin/RelWithDebInfo/OgrePhysicsDemo.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(ProjectDir)$(BaseOutputPath)$(Configuration)\$(ProjectName)$(TargetExt)</OutputFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\Components\Hlms\Pbs\OgreHlmsPbs.vcxproj">
+      <Project>{C7C94011-2F44-3245-83E7-A86E177A9DDB}</Project>
+      <Name>OgreHlmsPbs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\Components\Hlms\Unlit\OgreHlmsUnlit.vcxproj">
+      <Project>{2408E511-C40C-36C2-86D5-137382D5F776}</Project>
+      <Name>OgreHlmsUnlit</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\OgreMain\OgreMain.vcxproj">
+      <Project>{31C7302E-9B7F-3826-82F1-C57C023497DA}</Project>
+      <Name>OgreMain</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\Components\Overlay\OgreOverlay.vcxproj">
+      <Project>{CA73494F-B5B7-38E1-9B42-13934D2F91C1}</Project>
+      <Name>OgreOverlay</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Kiko\MyProjects\Ogre\Ogre\ogre-next\build\Samples\2.0\Common\OgreSamplesCommon.vcxproj">
+      <Project>{F2C4875E-A6FA-3A55-BFBE-48102B28C35E}</Project>
+      <Name>OgreSamplesCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Common\BaseSystem.cpp" />
+    <ClCompile Include="src\Common\CameraController.cpp" />
+    <ClCompile Include="src\Common\GameEntityManager.cpp" />
+    <ClCompile Include="src\Common\GraphicsSystem.cpp" />
+    <ClCompile Include="src\Common\LogicSystem.cpp" />
+    <ClCompile Include="src\Common\SdlInputHandler.cpp" />
+    <ClCompile Include="src\Common\System\Android\AndroidSystems.cpp" />
+    <ClCompile Include="src\Common\System\Desktop\MainLoopMultiThreaded.cpp" />
+    <ClCompile Include="src\Common\System\Desktop\MainLoopSingleThreaded.cpp" />
+    <ClCompile Include="src\Common\System\Desktop\UnitTesting.cpp" />
+    <ClCompile Include="src\Common\System\MainEntryPoints.cpp" />
+    <ClCompile Include="src\Common\System\StaticPluginLoader.cpp" />
+    <ClCompile Include="src\Common\Threading\MessageQueueSystem.cpp" />
+    <ClCompile Include="src\Common\TutorialGameState.cpp" />
+    <ClCompile Include="src\Common\Utils\HdrUtils.cpp" />
+    <ClCompile Include="src\Common\Utils\MeshUtils.cpp" />
+    <ClCompile Include="src\Common\Utils\MiscUtils.cpp" />
+    <ClCompile Include="src\Common\Utils\ScreenSpaceReflections.cpp" />
+    <ClCompile Include="src\Common\Utils\SmaaUtils.cpp" />
+    <ClCompile Include="src\Common\Utils\TestUtils.cpp" />
+    <ClCompile Include="src\GraphicsGameState.cpp" />
+    <ClCompile Include="src\LogicGameState.cpp" />
+    <ClCompile Include="src\MyCamera.cpp" />
+    <ClCompile Include="src\OgrePhysicsDemo.cpp" />
+    <ClCompile Include="src\PhysicsWorld.cpp" />
+    <ClCompile Include="src\Utils\b3Clock.cpp" />
+    <ClCompile Include="src\Utils\b3ResourcePath.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Common\BaseSystem.h" />
+    <ClInclude Include="include\Common\CameraController.h" />
+    <ClInclude Include="include\Common\GameEntity.h" />
+    <ClInclude Include="include\Common\GameEntityManager.h" />
+    <ClInclude Include="include\Common\GameState.h" />
+    <ClInclude Include="include\Common\GraphicsSystem.h" />
+    <ClInclude Include="include\Common\InputListeners.h" />
+    <ClInclude Include="include\Common\LogicSystem.h" />
+    <ClInclude Include="include\Common\MainEntryPointHelper.h" />
+    <ClInclude Include="include\Common\SdlEmulationLayer.h" />
+    <ClInclude Include="include\Common\SdlInputHandler.h" />
+    <ClInclude Include="include\Common\System\Android\AndroidSystems.h" />
+    <ClInclude Include="include\Common\System\Desktop\UnitTesting.h" />
+    <ClInclude Include="include\Common\System\iOS\AppDelegate.h" />
+    <ClInclude Include="include\Common\System\iOS\GameViewController.h" />
+    <ClInclude Include="include\Common\System\iOS\iOSUtils.h" />
+    <ClInclude Include="include\Common\System\MainEntryPoints.h" />
+    <ClInclude Include="include\Common\System\OSX\OSXUtils.h" />
+    <ClInclude Include="include\Common\System\StaticPluginLoader.h" />
+    <ClInclude Include="include\Common\Threading\MessageQueueSystem.h" />
+    <ClInclude Include="include\Common\Threading\MqMessages.h" />
+    <ClInclude Include="include\Common\Threading\YieldTimer.h" />
+    <ClInclude Include="include\Common\TutorialGameState.h" />
+    <ClInclude Include="include\Common\Utils\HdrUtils.h" />
+    <ClInclude Include="include\Common\Utils\MeshUtils.h" />
+    <ClInclude Include="include\Common\Utils\MiscUtils.h" />
+    <ClInclude Include="include\Common\Utils\ScreenSpaceReflections.h" />
+    <ClInclude Include="include\Common\Utils\SmaaUtils.h" />
+    <ClInclude Include="include\Common\Utils\TestUtils.h" />
+    <ClInclude Include="include\GraphicsGameState.h" />
+    <ClInclude Include="include\LogicGameState.h" />
+    <ClInclude Include="include\MyCamera.h" />
+    <ClInclude Include="include\PhysicsWorld.h" />
+    <ClInclude Include="include\Utils\b3BulletDefaultFileIO.h" />
+    <ClInclude Include="include\Utils\b3Clock.h" />
+    <ClInclude Include="include\Utils\b3ERPCFMHelper.hpp" />
+    <ClInclude Include="include\Utils\b3ReferenceFrameHelper.hpp" />
+    <ClInclude Include="include\Utils\b3ResourcePath.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
